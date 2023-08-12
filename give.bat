@@ -4,12 +4,8 @@ call variables.bat
 
 cd %project_directory%
 
-if "%~1"=="" (
-    set /p "project_name=Enter the name of project folder : "
-    cd %project_name%
-) else (
-    cd "%~1"
-)
+set /p "project_name=Enter the name of project folder : "
+cd %project_name%
 
 cd Shri
 echo Changed into directory: Shri
